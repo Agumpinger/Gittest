@@ -1,0 +1,158 @@
+/*
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.zf-green {
+    color: #68b604;
+}
+
+.btn-success {
+  background-color: #57a900;
+  background-image: -moz-linear-gradient(top, #70d900, #57a900);
+  background-image: -ms-linear-gradient(top, #70d900, #57a900);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#70d900), to(#57a900));
+  background-image: -webkit-linear-gradient(top, #70d900, #57a900);
+  background-image: -o-linear-gradient(top, #70d900, #57a900);
+  background-image: linear-gradient(top, #70d900, #57a900);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70d900', endColorstr='#57a900', GradientType=0);
+}
+
+.btn-success:hover,
+.btn-success:active,
+.btn-success.active,
+.btn-success.disabled,
+.btn-success[disabled] {
+  background-color: #57a900;
+}
+
+.btn-success:active, .btn-success.active {
+  background-color: #57a900;
+}
+
+div.container a.brand {
+    background: url("../img/zf2-logo.png") no-repeat scroll 0 10px transparent;
+    margin-left: 0;
+    padding: 8px 20px 12px 40px;
+}
+*/
+body {
+	background-image: none;
+	background-color: #1894c8;
+}
+
+.navbar-default {
+	box-shadow: none;
+	webkit-box-shadow: none;
+	background-image: none;
+	background-color: #1894c8;
+	color: #ffffff;
+	height: 57px;
+	font-size: 17px;
+	padding-top: 3px;
+}
+
+	.navbar-default .navbar-nav>.active>a,
+	.navbar-default .navbar-nav>.active>a:hover,
+	.navbar-default .navbar-nav>.active>a:focus {
+	color: #ffffff;
+	background-color: #1894c8;
+	background-image: none;
+	box-shadow: none;
+	webkit-box-shadow: none;
+}
+.navbar-form {
+	margin: 0px;
+	padding-top: 2px;
+	
+}
+
+.navbar-brand {
+	color: #ffffff;
+	padding-left: 15px;
+	padding-top: 8px;
+}
+.maincontent {
+	width: 100%;
+	background-color:#f7f7f7;
+	display: block;
+ 	margin-right: auto;
+    margin-left: auto;
+}
+.grey-content {
+	padding: 30px;
+	background-color: #f7f7f7;
+}
+.white-content {
+	padding: 30px;
+	background-color: #ffffff;
+}
+.welcome {
+	padding-top: 15px;
+	color: #ffffff;
+}
+
+.reg-short {
+	margin-top: 50px;
+	padding-top: 15px;
+}
+
+.form-control {
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.container .jumbotron {
+	border-radius: 0px;
+	background-image: none;
+	background-color: #37a9d9;
+}
+.fb-button{
+	background: url("../img/fb.png") no-repeat;
+	background-position: center center;
+	margin-top:4px;
+	width:35px;
+	height: 35px;
+	
+}
+#indexwelcome {
+	background: url("../img/bg.png") no-repeat;
+	background-size: 100%;
+	background-size: cover;
+	background-color: #1894c8;
+	background-position: center center;
+	padding-top:40px;
+	padding-left:10px;
+	padding-bottom:20px;
+}
+.footer {
+	color: #eaeaea;
+text-decoration: none;
+	padding-top: 10px;
+}
+.footer a{
+	padding-left: 5px;
+	pading-right: 5px;
+	color: #eaeaea;
+text-decoration: none;
+}
+.btn-primary {
+  background-image: -webkit-linear-gradient(top, #820084 0%, #821982 100%);
+  background-image: linear-gradient(to bottom, #820084 0%, #821982 100%);
+  background-repeat: repeat-x;
+  border-color: #660068;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff2d6ca2', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #821982;
+  background-position: 0 -15px;
+}
+
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #821982;
+  border-color: #660068;

@@ -1,0 +1,22 @@
+<h1>Welcome to Users Module</h1>
+          <?php if(!$session->offsetExists('user')){?>  <a href="<?php echo $this->url('users', array('action'=>'login'))?>">Login</a> | <a href="<?php echo $this->url('users', array('action'=>'register') )?>">New User Registration</a>
+		
+          <?php  
+ }else{  ?> 
+ 
+ <p>	<a href="<?php echo $this->url('users', array('action'=>'logout'))?>">Logout</a> </p>
+
+
+                <h3 class="panel-title"><?php echo $this->translate('Userdaten') ?></h3>
+      
+              
+                <table class="table table-striped">
+                <tr><td>Name</td><td>	<?php echo sprintf($session->offsetGet('user')->getName()) ?></td>
+               	<tr><td>Firstname</td><td>	<?php echo sprintf($session->offsetGet('user')->getSurname()) ?></td>
+               	<tr><td>Email</td><td>	<?php echo sprintf($session->offsetGet('user')->getEmail()) ?> </td>
+           		<tr><td>Password</td><td>	<?php echo sprintf($session->offsetGet('user')->getPassword()) ?></td>
+                <tr><td>Role</td><td>	<?php echo sprintf($session->offsetGet('user')->getRoles()) ?></td>
+               	</table>
+               
+		
+ <?php }?>

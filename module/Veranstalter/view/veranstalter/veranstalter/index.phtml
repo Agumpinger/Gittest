@@ -1,0 +1,39 @@
+ 
+ <?php
+ $title = 'Veranstalter';
+ $this->headTitle($title);
+ ?>
+ <h1><?php echo $this->escapeHtml($title); ?></h1>
+<div class="grey-content">
+<p> <h2> <?php echo sprintf("Hier sind zwei Links zu Actions des VeranstalterController")?></h2>
+	<a href=<?php echo $this->url('veranstalter', array('action'=>'add'))?>><?php echo $this->translate("Add Veranstalter")?></a><br>
+	<a href=<?php echo $this->url('veranstalter', array('action'=>'edit'))?>><?php echo $this->translate("Edit Veranstalter")?></a><br>
+	<a href=<?php echo $this->url('event', array('action'=>'index'))?>><?php echo $this->translate("EventController IndexAction")?></a><br>
+	<a href=<?php echo $this->url('veranstalter', array('action' => 'requests'))?>><?php echo $this->translate("Stellen von Antraegen")?></a><br>
+	</div>
+
+<div class="row">
+
+    <div class="col-md-4">
+     <?php  if ($session->offsetExists('user')){?>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><?php echo $this->translate('Veranstalterdaten') ?></h3>
+            </div>
+        
+            <div class="panel-body">
+              
+                <table class="table table-striped">
+                <tr><td>Name</td><td>	<?php echo sprintf($_SESSION['userSession']['user']->getName()) ?></td>
+               	<tr><td>Firstname</td><td>	<?php echo sprintf($session->offsetGet('user')->getSurname()) ?></td>
+               	<tr><td>Email</td><td>	<?php echo sprintf($session->offsetGet('user')->getEmail()) ?> </td>
+           		<tr><td>Passord</td><td>	<?php echo sprintf($session->offsetGet('user')->getPassword()) ?></td>
+                <tr><td>Role</td><td>	<?php echo sprintf($session->offsetGet('user')->getRoles()) ?></td>
+               	</table>
+               
+			</div>     
+		</div>
+		<?php }?>
+	</div>
+</div>
+

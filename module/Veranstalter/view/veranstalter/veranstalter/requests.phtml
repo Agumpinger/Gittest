@@ -1,0 +1,28 @@
+
+<?php
+             $form = $this->form;
+             $form->prepare();
+             $form->setAttribute('action', $this->url('event', array('action' => 'choice')));
+             $form->setAttribute('method', 'post');
+             echo $this->form()->openTag($form);
+             ?>
+
+      
+<?php
+$title = 'Stellen von Antraegen';
+$this->headTitle($title);
+?>
+ <h1><?php echo $this->escapeHtml($title); ?></h1>
+ <p> Welches Event moechten Sie aendern? </p>
+  (Hier dann ein Drop Down Menue mit noch nicht abgelaufenen Events)
+ <!-- <pre><?php echo print_r($this->events);?></pre>  --> 
+
+<?php echo $this->formLabel ( $form->get( 'select' ));?>
+		<?php
+			echo $this->formElement ( $form->get('select') );
+			
+		?><br>
+		<?php echo $this->formElement ($form->get('submit'));?>
+ <?php echo $this->form()->closeTag() ?>
+ 
+ 

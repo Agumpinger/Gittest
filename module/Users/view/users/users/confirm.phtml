@@ -1,0 +1,35 @@
+  <section class="register-confirm">
+           <h2>Register Sucessfull</h2>
+           <p> Thank you for your registration. </p>
+           
+          
+           
+          
+          		<h3>User-Daten</h3><br>
+          	<table class="table table-striped">
+            
+            <tbody>
+              <tr>
+                
+                <td>Name</td>
+                <td><?php echo sprintf($persons->getName() )?></td>
+              </tr>
+              <tr>  
+                <td>Firstname</td>
+                <td><?php echo sprintf($persons->getSurname() )?></td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td><?php echo sprintf($persons->getEmail()) ?></td>
+                
+              </tr>
+              <tr>
+                <td>Password (MD5)</td>
+                <td><?php echo sprintf($persons->getPassword()) ?></td>
+                
+              </tr>
+            </tbody>
+          </table>
+          			
+       
+</section>

@@ -1,0 +1,16 @@
+<?php use Zend\Session\Container;?>
+
+
+<section class="logged">
+
+
+
+<h1>You are logged in!</h1>
+
+<p>Session muss noch implementiert werden</p>
+
+<?php echo sprintf($user->getId())?><br>
+<?php echo sprintf($user->getName())?><br>
+<?php echo sprintf($user->getEmail())?><br>
+<a href='/veranstalter/requests'>Stellen von Antreagen</a>
+</section>
