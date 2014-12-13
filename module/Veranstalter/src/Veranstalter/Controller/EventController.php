@@ -71,18 +71,7 @@ class EventController extends AbstractActionController
 				else 
 					array_push($notExistingLabels, $labelStandards[$counter++]);
 			}
-			$model = new ViewModel(array('ex' => $existingLabels, 'noEx' => $notExistingLabels));
-			$model->setTemplate('/veranstalter/event/labelEdit');
-		} else if ($choice == "restrictions") {			
-			$res = $alloc->loadEventRestrictions();
-			$form = new RestrictionsEditForm($res);
-			$model = new ViewModel(array('form' => $form, 'res' => $res));
-			$model->setTemplate('/veranstalter/event/restrictionsEdit');
-		} else if ($choice == "data") {
-			$form = new EventEditForm($event);
-			$model = new ViewModel(array('form' => $form));
-		} else {
-			return "Keine Uebereinstimmung";
+			
 		}		
 		
 		return $model;
