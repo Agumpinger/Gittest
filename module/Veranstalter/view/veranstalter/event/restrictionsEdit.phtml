@@ -1,0 +1,56 @@
+
+<?php
+             $form = $this->form;
+             $form->prepare();
+             $form->setAttribute('action', $this->url('veranstalter', array('action' => 'requestSend')));
+             $form->setAttribute('method', 'post');
+             echo $this->form()->openTag($form);
+             ?>
+     <br><br><br> 
+<?php
+
+$title = 'Hier werden alle Restrictions einer Veranstaltung ausgegeben';
+$this->headTitle($title);
+?>
+
+<h1><?php echo $this->escapeHtml($title); ?></h1> 
+<pre><?php echo print_r($this->res)?></pre>
+
+
+<?php echo $this->formLabel ( $form->get( 'select' ));?>
+		<?php
+			echo $this->formElement ( $form->get('select') );			
+		?><br>
+		
+<?php echo $this->formLabel ( $form->get( 'age' ));?>
+		<?php
+			echo $this->formElement ( $form->get('age') );			
+		?><br>
+
+		<?php echo $this->formLabel ( $form->get( 'male' ));?>
+		<?php
+			echo $this->formElement ( $form->get('male') );			
+		?><br>
+		
+		<?php echo $this->formLabel ( $form->get( 'female' ));?>
+		<?php
+			echo $this->formElement ( $form->get('female') );			
+		?><br>
+		
+		<?php echo $this->formLabel ( $form->get( 'championship' ));?>
+		<?php
+			echo $this->formElement ( $form->get('championship') );			
+		?><br>
+		
+		<?php echo $this->formLabel ( $form->get( 'company' ));?>
+		<?php
+			echo $this->formElement ( $form->get('company') );			
+		?><br>
+		
+		
+		<?php echo $this->formElement ($form->get('submit'));?>
+				
+		
+ <?php echo $this->form()->closeTag() ?>
+ 
+ 

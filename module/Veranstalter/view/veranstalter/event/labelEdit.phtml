@@ -1,0 +1,23 @@
+
+     <br><br><br> 
+<?php
+
+$title = 'Hier werden alle Labels einer Veranstaltung ausgegeben';
+$this->headTitle($title);
+?>
+
+<h2>Bereits vorhandene Labels</h2>
+<?php foreach ($this->ex as $element) {?>
+	<?php echo $element; ?><br>
+		<?php }
+						
+		?><br>
+		<h2>Beantragbare Labels</h2>
+		<?php foreach ($this->noEx as $element) {?>
+<?php echo $element?><br>
+		<?php
+		}			
+		?><br>
+
+
+ 

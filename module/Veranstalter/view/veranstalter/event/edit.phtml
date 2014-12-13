@@ -1,0 +1,86 @@
+
+<?php
+             $form = $this->form;
+             $form->prepare();
+             $form->setAttribute('action', $this->url('veranstalter', array('action' => 'requestSend')));
+             $form->setAttribute('method', 'post');
+             echo $this->form()->openTag($form);
+             ?>
+
+      
+<?php
+
+$title = 'Hier werden alle Daten einer Veranstaltung ausgegeben';
+$this->headTitle($title);
+?>
+ <h1><?php echo $this->escapeHtml($title); ?></h1> 
+ <p>Restrictions Array</p>
+ <pre><?php echo print_r($this->restrictions)?></pre>
+ <p>Label Array</p>
+ <pre><?php echo print_r($this->labels)?></pre>
+
+<?php echo $this->formLabel ( $form->get( 'name' ));?>
+		<?php
+			echo $this->formElement ( $form->get('name') );			
+		?><br>
+		
+<?php echo $this->formLabel ( $form->get( 'sport' ));?>
+		<?php
+			echo $this->formElement ( $form->get('sport') );			
+		?><br>
+
+		<?php echo $this->formLabel ( $form->get( 'resid' ));?>
+		<?php
+			echo $this->formElement ( $form->get('resid') );			
+		?><br>
+		
+		<?php echo $this->formLabel ( $form->get( 'upid' ));?>
+		<?php
+			echo $this->formElement ( $form->get('upid') );			
+		?><br>
+		
+		<?php echo $this->formLabel ( $form->get( 'labid' ));?>
+		<?php
+			echo $this->formElement ( $form->get('labid') );			
+		?><br>
+		
+		<?php echo $this->formLabel ( $form->get( 'previd' ));?>
+		<?php
+			echo $this->formElement ( $form->get('previd') );			
+		?><br>
+		
+		<?php echo $this->formLabel ( $form->get( 'postid' ));?>
+		<?php
+			echo $this->formElement ( $form->get('postid') );			
+		?><br>
+		
+		<?php echo $this->formLabel ( $form->get( 'adr' ));?>
+		<?php
+			echo $this->formElement ( $form->get('adr') );			
+		?><br>
+		
+		<?php echo $this->formLabel ( $form->get( 'hounr' ));?>
+		<?php
+			echo $this->formElement ( $form->get('hounr') );			
+		?><br>
+		
+		<?php echo $this->formLabel ( $form->get( 'fee' ));?>
+		<?php
+			echo $this->formElement ( $form->get('fee') );			
+		?><br>
+			
+		<?php echo $this->formLabel ( $form->get( 'descr' ));?>
+		<?php
+			echo $this->formElement ( $form->get('descr') );			
+		?><br>
+			
+		<?php echo $this->formLabel ( $form->get( 'lim' ));?>
+		<?php
+			echo $this->formElement ( $form->get('lim') );			
+		?><br>
+		<?php echo $this->formElement ($form->get('submit'));?>
+				
+		
+ <?php echo $this->form()->closeTag() ?>
+ 
+ 
